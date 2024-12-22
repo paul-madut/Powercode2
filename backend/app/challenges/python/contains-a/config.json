@@ -1,0 +1,7 @@
+{
+  "name": "Contains a",
+  "description": "Check if a sting contains the letter a",
+  "instructions": "Given a string, return true if the string contains the lowercase letter a and return false if the string does not contain the lowercase letter a",
+  "numberOfArgs": 1,
+  "difficulty": 1
+}

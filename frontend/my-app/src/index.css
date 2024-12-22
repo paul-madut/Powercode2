@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  @apply overflow-x-hidden
+}
+
+/* For WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; /* Horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; /* VS Code background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3c3c3c; /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #1e1e1e; /* Matches track background for padding effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a5a5a; /* Lighter color on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3c3c3c #1e1e1e; /* Thumb and track colors */
+}
+

@@ -1,0 +1,7 @@
+{
+  "name": "Greater Number",
+  "description": "Find the greater number",
+  "instructions": "Given two integers, return the greater number and if they are equal, return the number they are equal to",
+  "numberOfArgs": 1,
+  "difficulty": 1
+}

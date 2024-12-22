@@ -1,0 +1,4 @@
+{"username": "alice123", "password": "hashed_password_1", "name": "Alice", "score": 1200}
+{"username": "bob456", "password": "hashed_password_2", "name": "Bob", "score": 1350}
+{"username": "charlie789", "password": "hashed_password_3", "name": "Charlie", "score": 1400}
+{"username": "david321", "password": "hashed_password_4", "name": "David", "score": 1500}
