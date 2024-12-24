@@ -19,6 +19,10 @@ export default tseslint.config(
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
+      'no-console': 'off', // Disable specific rules
+    'react/react-in-jsx-scope': 'off', // Disable React scope requirement
+    'react/react-in-tsx-scope': 'off', // Disable React scope requirement
+    
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },

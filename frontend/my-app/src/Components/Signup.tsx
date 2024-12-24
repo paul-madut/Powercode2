@@ -16,12 +16,9 @@ import { useState } from "react";
 
 
 export default function Signup() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form submitted");
-  };
 
-  const [isLogin, setIsLogin] = useState(true);
+
+  
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -46,8 +43,9 @@ export default function Signup() {
       });
       localStorage.setItem("username", username);
       navigate(`/landing/${newPlayerId}`);
-    } catch (error) {
+    } catch (e) {
       setError("Signup failed. Please try again.");
+      console.log(error);
     }
   };
 

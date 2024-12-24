@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 import { Tabs } from "@/components/ui/tabs";
 import Login from "../Components/Login";
 import Signup from "../Components/Signup";

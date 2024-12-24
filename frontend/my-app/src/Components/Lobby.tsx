@@ -15,7 +15,7 @@ export default function Lobby() {
   const [gameCode, setGameCode] = useState('')
   const [language, setLanguage] = useState('Python');
   const [isCreatingGame, setIsCreatingGame] = useState(true)
-  const[name, setName] = useState(localStorage.getItem("username"))
+  const name= localStorage.getItem("username");
 
   const createGameMutation = useMutation(api.games.createGame);
   const joinGameMutation = useMutation(api.games.joinGame); 
