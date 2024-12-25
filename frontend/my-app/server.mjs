@@ -4,7 +4,7 @@ import { Server } from "socket.io";
 import cors from "cors";
 
 const app = express();
-const port = 10000;
+const port = 3001;
 
 // Configure CORS middleware
 app.use(cors({

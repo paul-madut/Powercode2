@@ -16,6 +16,10 @@ import { useState } from "react";
 
 
 export default function Signup() {
+  const addrress = import.meta.env.VITE_CONVEX_URL;
+if (!addrress) {
+  throw new Error("Missing Convex URL");
+}
 
 
   

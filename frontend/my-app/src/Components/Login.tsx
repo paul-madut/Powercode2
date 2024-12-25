@@ -18,6 +18,10 @@ import { useNavigate } from "react-router-dom";
 
 
 export default function Login() {
+  const addrress = import.meta.env.VITE_CONVEX_URL;
+if (!addrress) {
+  throw new Error("Missing Convex URL");
+}
 
   const [username, setUsername] = useState("");
 const [password, setPassword] = useState("");
