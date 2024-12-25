@@ -42,7 +42,7 @@ const loginPlayerMutation = useMutation(api.players.loginPlayer);
 
   return (
     <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-vs-dark-gray">
-      <h2 className="font-bold text-xl text-neutral-200">Welcome back!</h2>
+      <h2 className="font-bold text-xl text-neutral-200">Welcome back to <span className="text-vs-blue">Powercode</span>!</h2>
       <p className=" text-sm max-w-sm mt-2 text-neutral-300">
         I don&apos;t know why you&apos;d ever log out but we&apos;re glad
         you&apos;re back!
