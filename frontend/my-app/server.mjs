@@ -4,11 +4,11 @@ import { Server } from "socket.io";
 import cors from "cors";
 
 const app = express();
-const port = 3001;
+const port = 10000;
 
 // Configure CORS middleware
 app.use(cors({
-  origin: "http://localhost:5173", // Your frontend origin
+  origin: "https://powercode2.vercel.app/", // Your frontend origin
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"]
 }));
@@ -17,7 +17,7 @@ app.use(cors({
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:5173", // Your frontend origin
+    origin: "https://powercode2.vercel.app/", // Your frontend origin
     methods: ["GET", "POST"]
   }
 });
