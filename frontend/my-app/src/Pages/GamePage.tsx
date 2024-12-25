@@ -217,7 +217,7 @@ const GamePage = () => {
     return new Promise((resolve, reject) => {
       var url =""
         if (selectedFunction){
-          url='https://power-code-047dc2136570.herokuapp.com/api/code-check/python/'+selectedFunction.id
+          url='https://https://powercode2.onrender.com/'+selectedFunction.id
         } 
         axios.post(url, {
             code: code,
