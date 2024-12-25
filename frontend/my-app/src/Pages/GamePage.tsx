@@ -217,7 +217,7 @@ const GamePage = () => {
     return new Promise((resolve, reject) => {
       var url =""
         if (selectedFunction){
-          url='https://https://powercode2.onrender.com/'+selectedFunction.id
+          url= import.meta.env.VITE_API_URL + selectedFunction.id
         } 
         axios.post(url, {
             code: code,
