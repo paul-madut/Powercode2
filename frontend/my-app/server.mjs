@@ -8,7 +8,7 @@ const port = 3001;
 
 // Configure CORS middleware
 app.use(cors({
-  origin: "https://powercode2.vercel.app/", // Your frontend origin
+  origin: "https://power-code.netlify.app/", // Your frontend origin
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"]
 }));
@@ -17,7 +17,7 @@ app.use(cors({
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
   cors: {
-    origin: "https://powercode2.vercel.app/", // Your frontend origin
+    origin: "https://power-code.netlify.app/", // Your frontend origin
     methods: ["GET", "POST"]
   }
 });
